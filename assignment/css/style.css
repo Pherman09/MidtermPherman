@@ -2,6 +2,7 @@ body {
     padding: 0;
     overflow: hidden;
     font-family: helvetica, arial, sans-serif;
+    background-color: #8CBABD;
 }
 
 .map {
@@ -15,9 +16,82 @@ body {
 .sidebar {
     position: absolute;
     left: 0px;
-    width: 340px;
+    width: 300px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
     padding: 20px;
-    border-style: double;
+    border-right-style: solid;
+    overflow-y: scroll;
+}
+
+h1{
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #147A8F
+}
+
+.legend {
+  position: relative;
+  background-color: inherit;
+  padding-top: 10px;
+  width: 270px;
+  background-color: #8CBABD;
+  z-index: 2000;
+}
+
+.item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.colorbox {
+  width: 20px;
+  height: 20px;
+  border-style:solid;
+  border-color:white;
+  border-width: thin;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow{
+  background-color: yellow;
+}
+
+#green{
+  background-color: green;
+}
+
+#purple {
+  background-color: purple;
+}
+
+
+.footers{
+  padding: 20px;
+}
+
+.footers button{
+    position: absolute;
+    bottom: 10px;
+    background-color: #147A8F;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+#prevslide {
+  margin-left: 75px;
+}

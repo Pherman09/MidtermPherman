@@ -3,7 +3,7 @@ Week 7
 ================================ */
 //chartjs.org
 
-//Map Setup from Week4 Lab 2
+//Map Setup from Week4 Lab 2``
 var map = L.map('map', {
   center: [39.9522, -75.1639],
   zoom: 14
