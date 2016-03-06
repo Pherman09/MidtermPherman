@@ -30,6 +30,11 @@ h1{
   color: #147A8F
 }
 
+#slideText {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 .legend {
   position: relative;
   background-color: inherit;
@@ -42,6 +47,8 @@ h1{
 .item {
   padding-left: 10px;
   padding-right: 10px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .colorbox {
@@ -51,27 +58,6 @@ h1{
   border-color:white;
   border-width: thin;
 }
-
-#red {
-  background-color: red;
-}
-
-#blue {
-  background-color: blue;
-}
-
-#yellow{
-  background-color: yellow;
-}
-
-#green{
-  background-color: green;
-}
-
-#purple {
-  background-color: purple;
-}
-
 
 .footers{
   padding: 20px;
