@@ -30,10 +30,11 @@ var data = schools;
 var mapfunc = function(fd, colorstring){_.each (fd, function(ob){
     var lat = ob.geometry.coordinates[1];
     var long = ob.geometry.coordinates[0];
-    myMarkers.push(L.circleMarker([lat,long],{fillColor:colorstring, color: colorstring}).setRadius(3));
+    var schooname = ob.properties.FACIL_NAME;
+    myMarkers.push(L.circleMarker([lat,long],{fillColor:colorstring, title: schooname, color: colorstring}).setRadius(3));
   });
   _.each(myMarkers, function(mark){
-    mark.addTo(map);
+    mark.addTo(map).bindPopup(mark.options.title);
   });
 };
 
